@@ -1,0 +1,107 @@
+﻿<Window x:Class="paint_task.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:paint_task"
+        mc:Ignorable="d"
+        Title="paint App" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.75*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Border BorderBrush="red" Background="Aqua" BorderThickness="5" Padding="5" CornerRadius="10">
+            <InkCanvas MouseUp="pic_draw" Name="Ink"></InkCanvas>
+        </Border>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <GroupBox
+                Height="150"
+                Width="100"
+                Header="color"
+                >
+                <StackPanel>
+                    <RadioButton Checked="change_color">red</RadioButton>
+                    <RadioButton Checked="change_color">green</RadioButton>
+                    <RadioButton Checked="change_color">blue</RadioButton>
+                    <RadioButton Checked="change_color">yellow</RadioButton>
+                </StackPanel>
+            </GroupBox>
+
+
+
+            <GroupBox
+                Height="150"
+                Width="100"
+                Header="modes"
+                >
+                <StackPanel>
+                    <RadioButton Checked="change_mode">ink</RadioButton>
+                    <RadioButton Checked="change_mode"   >select</RadioButton>
+                    <RadioButton Checked="change_mode" >erase</RadioButton>
+                    <RadioButton Checked="change_mode" >erase by stroke</RadioButton>
+                </StackPanel>
+            </GroupBox>
+
+
+
+            <GroupBox
+                Height="150"
+                Width="100"
+                Header="drawing shapes"
+                >
+                <StackPanel>
+                    <RadioButton Checked="add_shape">ellipse</RadioButton>
+                    <RadioButton Checked="add_shape" >rectangle</RadioButton>
+                </StackPanel>
+            </GroupBox>
+
+
+            <GroupBox
+                Height="150"
+                Width="100"
+                Header="brush size"
+                >
+                <StackPanel>
+                    <RadioButton Checked="brush_size">small</RadioButton>
+                    <RadioButton Checked="brush_size"  >normal</RadioButton>
+                    <RadioButton Checked="brush_size" >large</RadioButton>
+                </StackPanel>
+            </GroupBox>
+            
+            
+            <GroupBox
+                Height="150"
+                Width="300"
+                
+                >
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    
+                    <StackPanel Orientation="Horizontal">
+                        <Button Click="clear_content" Width="50" Height="20">new</Button>
+                        <Button Click="save_btn" Margin="20" Width="50" Height="20">save</Button>
+                        <Button Click="load_btn"  Width="50" Height="20">load</Button>
+         
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="1" Orientation="Horizontal">
+                        <Button  Click="copy_btn" Width="50" Height="20">copy</Button>
+                        <Button Click="cut_btn" Margin="20" Width="50" Height="20">cut</Button>
+                        <Button Click="paste_btn" Width="50" Height="20">paste</Button>
+                    </StackPanel>
+
+                </Grid>
+            </GroupBox>
+
+
+
+
+
+        </StackPanel>
+    </Grid>
+</Window>
