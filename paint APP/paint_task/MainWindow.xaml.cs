@@ -130,7 +130,7 @@ namespace paint_task
                 case "ellipse":
                     var myEllipse = new Ellipse();
                     myEllipse.Stroke = System.Windows.Media.Brushes.Black;
-                    myEllipse.Fill = System.Windows.Media.Brushes.DarkBlue;
+                    myEllipse.Fill = System.Windows.Media.Brushes.Red;
                     myEllipse.HorizontalAlignment = HorizontalAlignment.Left;
                     myEllipse.VerticalAlignment = VerticalAlignment.Center;
                     myEllipse.Width = 50;
