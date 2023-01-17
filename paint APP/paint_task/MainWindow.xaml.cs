@@ -135,6 +135,7 @@ namespace paint_task
                     myEllipse.VerticalAlignment = VerticalAlignment.Center;
                     myEllipse.Width = 50;
                     myEllipse.Height = 75;
+                    Ink.Children.Clear();
                     Ink.Children.Add(myEllipse);
 
                     break;
@@ -142,11 +143,12 @@ namespace paint_task
                 case "rectangle":
                     var myrect = new Rectangle();
                     myrect.Stroke = System.Windows.Media.Brushes.Black;
-                    myrect.Fill = System.Windows.Media.Brushes.DarkBlue;
+                    myrect.Fill = System.Windows.Media.Brushes.Gold;
                     myrect.HorizontalAlignment = HorizontalAlignment.Left;
                     myrect.VerticalAlignment = VerticalAlignment.Center;
                     myrect.Width = 50;
                     myrect.Height = 75;
+                    Ink.Children.Clear();
                     Ink.Children.Add(myrect);
                     break;
                

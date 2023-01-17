@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\WPF\Day1\paint_task\paint_task\obj\Debug\net6.0-windows\
+D:\WPF\WPF_Application_C_sharp\paint APP\paint_task\obj\Debug\net6.0-windows\
 paint_task
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-D:\WPF\Day1\paint_task\paint_task\App.xaml
+D:\WPF\WPF_Application_C_sharp\paint APP\paint_task\App.xaml
 11407045341
 
 5706364506
 194-2004305220
 MainWindow.xaml;
 
-True
+False
 

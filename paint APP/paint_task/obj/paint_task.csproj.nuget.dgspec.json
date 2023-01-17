@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\WPF\\Day1\\paint_task\\paint_task\\paint_task.csproj": {}
+    "D:\\WPF\\WPF_Application_C_sharp\\paint APP\\paint_task\\paint_task.csproj": {}
   },
   "projects": {
-    "D:\\WPF\\Day1\\paint_task\\paint_task\\paint_task.csproj": {
+    "D:\\WPF\\WPF_Application_C_sharp\\paint APP\\paint_task\\paint_task.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\WPF\\Day1\\paint_task\\paint_task\\paint_task.csproj",
+        "projectUniqueName": "D:\\WPF\\WPF_Application_C_sharp\\paint APP\\paint_task\\paint_task.csproj",
         "projectName": "paint_task",
-        "projectPath": "D:\\WPF\\Day1\\paint_task\\paint_task\\paint_task.csproj",
+        "projectPath": "D:\\WPF\\WPF_Application_C_sharp\\paint APP\\paint_task\\paint_task.csproj",
         "packagesPath": "C:\\Users\\Mahmoud Sallam\\.nuget\\packages\\",
-        "outputPath": "D:\\WPF\\Day1\\paint_task\\paint_task\\obj\\",
+        "outputPath": "D:\\WPF\\WPF_Application_C_sharp\\paint APP\\paint_task\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mahmoud Sallam\\AppData\\Roaming\\NuGet\\NuGet.Config",
