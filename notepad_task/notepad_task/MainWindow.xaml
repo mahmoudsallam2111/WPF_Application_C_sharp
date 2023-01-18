@@ -1,0 +1,62 @@
+﻿<Window x:Class="notepad_task.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:notepad_task"
+        mc:Ignorable="d"
+        Title="NotePad" Height="450" Width="500" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Border
+            BorderBrush="Black"
+           BorderThickness="5"
+            CornerRadius="3"
+            >
+            <TextBox Name="txt_box" TextChanged="txt_box_TextChanged">Replace default text with initial text value</TextBox>
+              
+        </Border>
+
+        <UniformGrid Grid.Row="1">
+            <Button Click="set_txt_btn" Width="100" Height="30" >set text</Button>
+            <Button x:Name="select_btn" Width="100" Height="30" Click="select_btn_Click" >select All</Button>
+            <Button x:Name="clr_btn" Width="100" Height="30" Click="clr_btn_Click" >clear</Button>
+            <Button Width="100" Height="30" Click="Button_Click" >prepend</Button>
+            <Button Width="100" Height="30" Click="Button_Click_1" >insert</Button>
+            <Button x:Name="prepend_btn" Width="100" Height="30" Click="prepend_btn_Click" >append</Button>
+            <Button Width="100" Height="30" Click="Button_Click_2" >cut</Button>
+            <Button Width="100" Height="30" Click="Button_Click_3" >paste</Button>
+            <Button Width="100" Height="30" Click="Button_Click_4" >Undo</Button>
+        </UniformGrid>
+
+        <GroupBox
+             Grid.Row="2"
+            HorizontalAlignment="Center"
+                >
+            <StackPanel Orientation="Horizontal">
+                <RadioButton Checked="change_mode" Margin="0 0 150 0" Content="Editable"/>
+                <RadioButton Checked="change_mode" Content="Readonly"/>
+            </StackPanel>
+
+        </GroupBox>
+
+
+        <GroupBox
+             Grid.Row="3"
+            HorizontalAlignment="Center"
+                >
+            <StackPanel Orientation="Horizontal">
+                <RadioButton  Checked="btn_style"  Content="left"/>
+                <RadioButton Checked="btn_style" Margin="140 0 " Content="center"/>
+                <RadioButton Checked="btn_style" Content="right"/>
+            </StackPanel>
+
+        </GroupBox>
+
+    </Grid>
+</Window>
